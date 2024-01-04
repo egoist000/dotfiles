@@ -1,0 +1,22 @@
+* {
+  border: none;
+}
+
+window {
+  font-size: 14px;
+  font-family: 'JetBrainsMono NF';
+  border-top: 3px solid #98971A;
+}
+
+#entry {
+  padding: 0.25em;
+}
+
+#input {
+  padding: 0.25em;
+}
+
+image {
+  margin-left: .25em;
+  margin-right: .25em;
+}

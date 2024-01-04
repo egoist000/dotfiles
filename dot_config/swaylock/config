@@ -1,0 +1,22 @@
+daemonize
+ignore-empty-password
+indicator
+fade-in=0.5
+grace=2
+clock
+screenshots
+hide-keyboard-layout
+font=JetBrainsMono NF
+font-size=48
+inside-color=282828
+effect-pixelate=7
+inside-ver-color=83a598
+ring-ver-color=458588
+inside-wrong-color=fb4934
+ring-wrong-color=cc241d
+inside-clear-color=fe8019
+ring-clear-color=d65d0e
+ring-color=98971a
+key-hl-color=b8bb26
+bs-hl-color=cc241d
+effect-vignette=0.9:0.5
