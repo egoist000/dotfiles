@@ -1,5 +1,11 @@
 mode=drun
 allow_images=true
 image_size=24
-columns=1
+width=500
+height=300
+always_parse_args=true
+show_all=true
+print_command=true
+layer=overlay
+insensitive=true
 hide_scroll=true

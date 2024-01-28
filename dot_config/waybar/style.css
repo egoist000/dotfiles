@@ -78,6 +78,7 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #custom-updates,
+#custom-wlsunset,
 #mpd {
     padding: 0 10px;
     color: #bff1c7;
