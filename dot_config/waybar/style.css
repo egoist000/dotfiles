@@ -5,9 +5,9 @@
 }
 
 window#waybar {
-    background-color: #282828;
-    border-bottom: solid 2px #689d6a;
-    color: #ebdbb2;
+    background-color: #1D2021;
+    /* border-bottom: solid 2px #689d6a; */
+    color: #FBF1C7;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -15,15 +15,6 @@ window#waybar {
 window#waybar.hidden {
     opacity: 0.2;
 }
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */
@@ -87,7 +78,7 @@ button:hover {
 #window,
 #workspaces {
     margin: 0 4px;
-    color: #b8bb26;
+    color: #B8BB26;
 
 }
 
@@ -102,16 +93,16 @@ button:hover {
 }
 
 #clock {
-    color: #fabd2f;
+    color: #B8BB26;
 }
 
 #battery.charging, #battery.plugged {
-    color: #b8bb26;
+    color: #B8BB26;
 }
 
 @keyframes blink {
     to {
-        background-color: #fb4932;
+        background-color: #EA6962;
     }
 }
 
@@ -133,7 +124,7 @@ label:focus {
 }
 
 #pulseaudio.muted {
-    background-color: #fe8019;
+    background-color: #E78A4E;
 }
 
 #temperature.critical {
@@ -145,8 +136,8 @@ label:focus {
 }
 
 #tray {
-    background-color: #3c3836;
-    border-bottom: solid 2px #689d6a;
+    background-color: #504945;
+    /* border-bottom: solid 2px #689d6a; */
 }
 
 #tray > .passive {
@@ -155,7 +146,7 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
+    background-color: #EA6962;
 }
 
 #idle_inhibitor {

@@ -4,17 +4,11 @@
     //"height": 30, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 2, // Gaps between modules (4px)
+    "margin": 7,
     // Choose the order of the modules
     "modules-left": ["custom/icon", "hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["custom/updates", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "custom/wlsunset", "battery", "clock", "tray"],
-    "sway/scratchpad": {
-        "format": "{icon} {count}",
-        "show-empty": false,
-        "format-icons": ["", ""],
-        "tooltip": true,
-        "tooltip-format": "{app}: {title}"
-    },
+    "modules-center": ["clock"],
+    "modules-right": ["custom/updates", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "custom/wlsunset", "battery", "tray"],
     "custom/icon": {
         "format": "󰣇",
         "tooltip": false,
@@ -27,7 +21,47 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format": "{:%a %d of %b %Y - %H:%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode"          : "year",
+            "mode-mon-col"  : 3,
+            "weeks-pos"     : "right",
+            "on-scroll"     : 1,
+            "on-click-right": "mode",
+            "format": {
+                "months":     "<span color='#FBF1C7'><b>{}</b></span>",
+                "days":       "<span color='#D3869B'><b>{}</b></span>",
+                "weeks":      "<span color='#83A598'><b>W{}</b></span>",
+                "weekdays":   "<span color='#FABD2F'><b>{}</b></span>",
+                "today":      "<span color='#B16286'><b><u>{}</u></b></span>"
+            }
+        },
+    },
+    "hyprland/workspaces": {
+        "active-only": false,
+        "all-outputs": true,
+        "disable-scroll": false,
+        "on-scroll-up": "hyprctl dispatch workspace -1",
+        "on-scroll-down": "hyprctl dispatch workspace +1",
+		    "format": "{icon}",
+		    "on-click": "activate",
+		    "format-icons": {
+			      "1":  "一",
+			      "2":  "二",
+			      "3":  "三",
+			      "4":  "四",
+			      "5":  "五",
+            "6":  "六",
+            "7":  "七",
+            "8":  "八",
+            "9":  "九",
+            "10": "十",
+			      //"urgent": "",
+			      //"active": "",
+			      //"default": "󰧞",
+            "sort-by-number": true
+        },
     },
     "cpu": {
         "format": "{usage}% 󰍛",
@@ -74,11 +108,11 @@
         "format-icons": ["󱃍","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"]
     },
     "custom/wlsunset": {
-        "format": "󰖨",
-        "on-click-right": "bash ~/.config/waybar/scripts/sunONOFF.sh",
-   	    //"on-scroll-up": "bash ~/.config/waybar/scripts/red_dec.sh",
-   	    //"on-scroll-down": "bash ~/.config/waybar/scripts/red_inc.sh",
+        "format": "󰖔",
+        //"exec": "~/.config/waybar/scripts/sunONOFF.sh",
+        "on-click": "~/.config/waybar/scripts/sunONOFF.sh",
         "tooltip": false,
+        //"signal": 8,
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
