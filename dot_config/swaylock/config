@@ -2,6 +2,7 @@ daemonize
 ignore-empty-password
 indicator
 fade-in=0.5
+grace-no-mouse
 grace=2
 clock
 screenshots
