@@ -108,11 +108,13 @@
         "format-icons": ["󱃍","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"]
     },
     "custom/wlsunset": {
-        "format": "󰖔",
-        //"exec": "~/.config/waybar/scripts/sunONOFF.sh",
-        "on-click": "~/.config/waybar/scripts/sunONOFF.sh",
+        "format": "{}",
+        "interval": "once",
+        "exec": "~/.config/waybar/scripts/sunONOFF.sh",
+        "on-click-right": "pkill -SIGRTMIN+8 waybar",
         "tooltip": false,
-        //"signal": 8,
+        "return-type": "json",
+        "signal": 8,
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
