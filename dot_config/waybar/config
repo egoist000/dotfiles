@@ -110,8 +110,8 @@
     "custom/wlsunset": {
         "format": "{}",
         "interval": "once",
-        "exec": "~/.config/waybar/scripts/sunONOFF.sh",
-        "on-click-right": "pkill -SIGRTMIN+8 waybar",
+        "exec": "~/.config/waybar/scripts/sun.sh",
+        "on-click": "~/.config/waybar/scripts/sunONOFF.sh",
         "tooltip": false,
         "return-type": "json",
         "signal": 8,
