@@ -63,6 +63,12 @@
             "sort-by-number": true
         },
     },
+    "hyprland/language": {
+      "format": "{}",
+      "format-en": "EN",
+      "format-it": "IT",
+      "keyboard-name": "at-translated-set-2-keyboard"
+    },
     "cpu": {
         "format": "{usage}% 󰍛",
         "tooltip": false
